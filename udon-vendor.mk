@@ -1389,7 +1389,6 @@ PRODUCT_PACKAGES += \
     libmmcamera_mfnr \
     libmmcamera_mfnr_t4 \
     libmmcamera_pdpc \
-    libolc_vnd_vendor \
     libopencv \
     libopencv3a \
     libopestriping \
@@ -1577,7 +1576,6 @@ PRODUCT_PACKAGES += \
     libcreatebin \
     libcustomer_halalgovisual \
     libcvface_api \
-    libdeccfg_sp \
     libdualcam_optical_zoom_control \
     libdualcam_video_optical_zoom \
     libeffect_custom \
@@ -1618,7 +1616,6 @@ PRODUCT_PACKAGES += \
     libthirdcapability \
     libtriplecam_optical_zoom_control \
     libtriplecam_video_optical_zoom \
-    libvasapi \
     libwatermark_photo \
     libwrapper_te \
     libyuv2 \

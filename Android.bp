@@ -7042,36 +7042,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "libolc_vnd_vendor",
-    stem: "libolc_vnd",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libolc_vnd.so",
-            ],
-            shared_libs: [
-                "vendor.oplus.hardware.olc2-V1-ndk",
-                "libutils",
-                "liblog",
-                "libhidlbase",
-                "libhidltransport",
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
 
 cc_prebuilt_library_shared {
     name: "libopencv",
@@ -10511,58 +10481,7 @@ cc_prebuilt_library_shared {
     device_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "libaiboost_qnn_sr",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libaiboost_qnn_sr.so",
-            ],
-            shared_libs: [
-                "libz",
-                "libdl",
-                "libm",
-                "liblog",
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
 
-cc_prebuilt_library_shared {
-    name: "libaiboost_sr",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libaiboost_sr.so",
-            ],
-            shared_libs: [
-                "libz",
-                "libdl",
-                "libm",
-                "liblog",
-                "libaiboost_qnn_sr",
-                "libaiboost_ubwc",
-                "libcdsprpc",
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
 
 cc_prebuilt_library_shared {
     name: "libaiboost_te",
@@ -10590,30 +10509,6 @@ cc_prebuilt_library_shared {
     device_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "libaiboost_ubwc",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libaiboost_ubwc.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcdsprpc",
-                "libm",
-                "libc",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
 
 cc_prebuilt_library_shared {
     name: "libaideblur",
@@ -12287,35 +12182,6 @@ cc_prebuilt_library_shared {
     device_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "libdeccfg_sp",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libdeccfg_sp.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "vendor.dolby_sp.hardware.dmssp@2.0",
-                "libdapparamstorage_sp",
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
 
 cc_prebuilt_library_shared {
     name: "libdualcam_optical_zoom_control",
@@ -13378,38 +13244,6 @@ cc_prebuilt_library_shared {
     device_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "libvasapi",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libvasapi.so",
-            ],
-            shared_libs: [
-                "libqmi_common_so",
-                "libqmi_cci",
-                "libqmi_encdec",
-                "libcutils",
-                "libradioapis",
-                "libutils",
-                "libqmi_csi",
-                "liblog",
-                "libmindroid-framework",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
 
 cc_prebuilt_library_shared {
     name: "libwatermark_photo",
